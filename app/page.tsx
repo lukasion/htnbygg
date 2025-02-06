@@ -65,6 +65,10 @@ export default function Home() {
             <footer className="flex flex-col gap-8 items-center container mx-auto my-8">
                 <Socialmedia/>
 
+                <p className="text-center text-gray-500">
+                    Blogg
+                </p>
+
                 <p className="text-center text-sm text-gray-500">
                     <span>
                         © {year}. Alle rettigheter forbeholdt.
