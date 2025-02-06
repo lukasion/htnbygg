@@ -66,7 +66,9 @@ export default function Home() {
                 <Socialmedia/>
 
                 <p className="text-center text-gray-500">
-                    Blogg
+                    <a href="/blog">
+                        Blogg
+                    </a>
                 </p>
 
                 <p className="text-center text-sm text-gray-500">
