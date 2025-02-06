@@ -14,6 +14,7 @@ export default function Home() {
     const tilby = useRef<HTMLDivElement>(null);
     const omOss = useRef<HTMLDivElement>(null);
     const [loading, setLoading] = useState(true);
+    const year = new Date().getFullYear();
 
     useEffect(() => {
         const animateLoader = () => {
@@ -34,7 +35,7 @@ export default function Home() {
 
     return (
         <div
-            className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen gap-16 font-[family-name:var(--font-geist-sans)]">
+            className="font-[family-name:var(--font-geist-sans)]">
             <main className="flex flex-col gap-8 row-start-2 items-center container mx-auto">
                 {loading && (
                     <div
@@ -59,9 +60,20 @@ export default function Home() {
                         <SectionOffer ref={tilby}/>
                     </div>
                 </div>
-
-                <Socialmedia/>
             </main>
+
+            <footer className="flex flex-col gap-8 items-center container mx-auto my-8">
+                <Socialmedia/>
+
+                <p className="text-center text-sm text-gray-500">
+                    <span>
+                        © {year}. Alle rettigheter forbeholdt.
+                    </span>
+                    <a href="https://www.github.com/lukasion" target={"_blank"} className={'ml-2'}>
+                        Author
+                    </a>
+                </p>
+            </footer>
         </div>
     );
 }

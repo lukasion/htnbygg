@@ -30,7 +30,7 @@ export default function SocialMedia() {
             <div className="flex justify-center gap-2">
                 {socialMedia.map((social) => (
                     <a key={social.name} href={social.link} target="_blank" rel="noreferrer" className={social.class}>
-                        <img src={`/icons/${social.icon}.svg`} alt={social.name} className={social.iconClass}/>
+                        <img src={`/images/icons/${social.icon}.svg`} alt={social.name} className={social.iconClass}/>
                     </a>
                 ))}
             </div>

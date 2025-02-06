@@ -17,7 +17,7 @@ export default function FloatingArrow() {
             whileHover={{
                 translateY: 0,
             }}
-            className="text-xl font-bold text-center fixed bottom-0 left-0 right-0 pb-8 flex items-center justify-center cursor-pointer"
+            className="text-xl font-bold text-center fixed bottom-0 pb-8 justify-center cursor-pointer"
             onClick={() => {
                 const currentScroll = window.scrollY;
 
